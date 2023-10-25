@@ -1,5 +1,3 @@
-
-
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +5,8 @@
 }
 
 body {
-  background-color: lightgray; 
+  background-color: lightgray;
+  font-family: 'Inter', sans-serif;
 }
 
 li {
@@ -19,39 +18,68 @@ li {
   height: 100vh;
   width: 100vw;
   grid-template-rows: 1.5fr 0.25fr 3.5fr 0.5fr;
+  background-size: 120vw;
 }
 
 .home-header {
-  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.header-picture {
+  width: 100%;
+}
+
+.restaurant-logo {
+  width: 85%;
+  max-width: 450px;
 }
 
 .main {
-  background-color: lightskyblue;
+  background-color: black;
+  opacity: 0.75;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+
+.title {
+  color: white;
+  font-size: 3rem;
+}
+
+.text {
+  color: white;
+  font-size: 1.5rem;
 }
 
 .footer {
-  background-color:lightgray;
 }
 
 .nav {
-  background-color: lightgray;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
 }
 
 .tab1,
 .tab2,
 .tab3 {
-  background-color: lightskyblue;
+  background-color: black;
+  opacity: 0.5;
   height: 100%;
   width: 25%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  max-width: 180px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .tab1:hover,
 .tab2:hover,
 .tab3:hover {
  cursor: pointer;
- background-color: rgb(110, 177, 219);
+ opacity: 0.75;
 }
+
