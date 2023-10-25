@@ -17,7 +17,7 @@ li {
   display: grid;
   height: 100vh;
   width: 100vw;
-  grid-template-rows: 1.5fr 0.25fr 3.5fr 0.5fr;
+  grid-template-rows: 1fr 0.25fr 3.5fr 0.5fr;
   background-size: 120vw;
 }
 
@@ -34,27 +34,26 @@ li {
 }
 
 .restaurant-logo {
-  width: 85%;
-  max-width: 450px;
+  width: 70%;
+  max-width: 300px;
+  min-width: 280px;
 }
 
 .main {
   background-color: black;
   opacity: 0.75;
   display: grid;
-  grid-template-rows: 1fr 6fr;
+  grid-template-rows: 1fr 3fr;
   justify-items: center;
-  max-height: 500px;
+  align-items: center;
 }
 
 .title {
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 10px;
   display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  text-wrap: nowrap;
+  height: min-content;
 }
 
 .tab-text1,

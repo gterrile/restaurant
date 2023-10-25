@@ -8,6 +8,7 @@ console.log('Restaurant Page');
 createHomePage();
 
 window.addEventListener('click', function(e) {
-  //console.log(e.target);
+  console.log(e.target);
+
   switchTabs(e);
 });
