@@ -1,5 +1,5 @@
-import Texture from './media/texture2.jpg';
-import Logo from './media/restaurant-logo.png';
+import Texture from './media/texture3.jpg';
+import Logo from './media/restaurant-logo2.png';
 import Restaurant1 from './media/restaurant-1.jpg';
 import Restaurant2 from './media/restaurant-2.jpg';
 import Restaurant3 from './media/restaurant-3.jpg';
