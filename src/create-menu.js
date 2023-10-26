@@ -18,7 +18,7 @@ export function createMenuPage() {
   tab2.setAttribute('style', 'opacity: 0.75');
   createMain();
   populateMenu();
-  createFooter();
+  //createFooter();
 }
 
 function populateMenu() {

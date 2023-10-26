@@ -1,4 +1,4 @@
-import Texture from './media/texture.jpg';
+import Texture from './media/texture2.jpg';
 import Logo from './media/restaurant-logo.png';
 import Restaurant1 from './media/restaurant-1.jpg';
 import Restaurant2 from './media/restaurant-2.jpg';
@@ -7,7 +7,7 @@ import { resetContent } from './reset-content.js';
 
 
 // Variables with Home Page text content.
-const TEXT = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+const TEXT = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.`
 
 // Create basic structure of home page
 const content = document.getElementById('content');
@@ -24,7 +24,7 @@ export function createHomePage() {
 
   createMain();
   createHomeMessage();
-  createFooter();
+  //createFooter();
 }
 
 export function createHeader() {

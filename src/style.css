@@ -6,7 +6,7 @@
 
 body {
   background-color: lightgray;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 li {
@@ -18,7 +18,7 @@ li {
   height: 100vh;
   width: 100vw;
   min-width: 350px;
-  grid-template-rows: 1fr 0.25fr 3.5fr 0.5fr;
+  grid-template-rows: 1fr 0.25fr 3.5fr;
   justify-content: center;
 }
 
@@ -53,10 +53,11 @@ li {
 }
 
 .picture-home {
-  width: 80vw;
-  max-width: 800px;
-  margin: 20px;
-  border-radius: 10px;
+  width: 70vw;
+  max-width: 700px;
+  margin: 10px;
+  border: 6px solid rgb(215, 157, 50);
+  border-radius: 6px;
 }
 
 .tab-text1,
@@ -67,7 +68,7 @@ li {
 
 .text {
   color: white;
-  font-size: 1.5rem;
+  font-size: 0.9rem;
   width: 80%;
   max-width: 800px;
   text-align: center;

@@ -48,9 +48,9 @@
 }
 
 .picture-container {
-  height: 35vw;
+  height: 30vw;
   max-height: 150px;
-  width: 35vw;
+  width: 30vw;
   max-width: 150px;
   border: 6px solid rgb(215, 157, 50);
   box-sizing: border-box;
