@@ -1,3 +1,74 @@
 .menu-title {
   color: red;
 }
+
+.contact-info {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.item-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 5fr 1fr;
+  gap: 5px;
+  width: 100%;
+  max-width: 800px;
+  min-height: 170px;
+  background-color: rgb(39, 39, 39);
+  border-radius: 10px;
+  align-items: center;
+  position: relative;
+  opacity: 1;
+}
+
+.itemTextbox {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  justify-content: center;
+}
+
+.item-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.item-description {
+  font-size: 0.75rem;
+  font-style: italic;
+  color: white;
+}
+
+.item-price {
+  font-size: 1rem;
+  color: rgb(215, 157, 50);
+  align-self: center;
+  justify-self: right;
+  padding-right: 20px;
+}
+
+.picture-container {
+  height: 35vw;
+  max-height: 150px;
+  width: 35vw;
+  max-width: 150px;
+  border: 6px solid rgb(215, 157, 50);
+  box-sizing: border-box;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.item-picture {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.menu-titles {
+  font-size: 2rem;
+  color: rgb(215, 157, 50);
+  margin: 20px 0;
+}

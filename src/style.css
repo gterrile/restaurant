@@ -6,7 +6,7 @@
 
 body {
   background-color: lightgray;
-  font-family: 'Inter', sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 li {
@@ -17,8 +17,9 @@ li {
   display: grid;
   height: 100vh;
   width: 100vw;
+  min-width: 350px;
   grid-template-rows: 1fr 0.25fr 3.5fr 0.5fr;
-  background-size: 120vw;
+  justify-content: center;
 }
 
 .home-header {
@@ -40,20 +41,22 @@ li {
 }
 
 .main {
-  background-color: black;
-  opacity: 0.75;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100vw;
   display: grid;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: auto;
   justify-items: center;
-  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 20px;
+  gap: 10px;
 }
 
-.title {
-  color: white;
-  font-size: 1.5rem;
-  padding: 10px;
-  display: flex;
-  height: min-content;
+.picture-home {
+  width: 80vw;
+  max-width: 800px;
+  margin: 20px;
+  border-radius: 10px;
 }
 
 .tab-text1,
@@ -64,8 +67,9 @@ li {
 
 .text {
   color: white;
-  font-size: 1rem;
-  padding: 30px;
+  font-size: 1.5rem;
+  width: 80%;
+  max-width: 800px;
   text-align: center;
   align-content: center;
 }
@@ -98,3 +102,26 @@ li {
  opacity: 0.75;
 }
 
+ion-icon {
+  font-size: 2.5rem;
+  color: black;
+  opacity: 0.75;
+}
+
+ion-icon:hover {
+  cursor: pointer;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 6fr 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer span {
+  font-size: 0.85rem;
+  margin: 0;
+  margin-left: 10vw;
+}

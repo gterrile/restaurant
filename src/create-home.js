@@ -1,9 +1,12 @@
 import Texture from './media/texture.jpg';
 import Logo from './media/restaurant-logo.png';
+import Restaurant1 from './media/restaurant-1.jpg';
+import Restaurant2 from './media/restaurant-2.jpg';
+import Restaurant3 from './media/restaurant-3.jpg';
 import { resetContent } from './reset-content.js';
 
+
 // Variables with Home Page text content.
-const TITLE = `Lola's Restaurant`
 const TEXT = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
 
 // Create basic structure of home page
@@ -74,6 +77,24 @@ export function createFooter() {
   const footer = document.createElement('div');
   footer.classList.add('footer');
   content.appendChild(footer);
+  
+  const contactInfo = document.createElement('div');
+  contactInfo.classList.add('contact-info');
+  const address = document.createElement('span');
+  address.textContent = '16550 Main Ave, San Fernando';
+  contactInfo.appendChild(address);
+  const tel = document.createElement('span');
+  tel.textContent = '550 123 1990';
+  contactInfo.appendChild(tel);
+  footer.appendChild(contactInfo);
+
+  const iconTelephone = document.createElement('ion-icon');
+  iconTelephone.setAttribute('name', 'call-outline');
+  footer.appendChild(iconTelephone);
+
+  const iconText = document.createElement('ion-icon');
+  iconText.setAttribute('name', 'chatbox-ellipses-outline');
+  footer.appendChild(iconText);
 }
 
 export function createMain() {
@@ -84,13 +105,34 @@ export function createMain() {
 
 function createHomeMessage() {
   const main = document.querySelector('.main');
-  const title = document.createElement('span');
-  title.textContent = TITLE;
-  title.classList.add('title');
-  main.appendChild(title);
 
-  const text = document.createElement('span');
-  text.textContent = TEXT;
-  text.classList.add('text');
-  main.appendChild(text);
+  const pictureHome1 = document.createElement('img');
+  pictureHome1.classList.add('picture-home')
+  pictureHome1.src = Restaurant1;
+  main.appendChild(pictureHome1);
+
+  const text1 = document.createElement('span');
+  text1.textContent = TEXT;
+  text1.classList.add('text');
+  main.appendChild(text1);
+
+  const pictureHome2 = document.createElement('img');
+  pictureHome2.classList.add('picture-home')
+  pictureHome2.src = Restaurant2;
+  main.appendChild(pictureHome2);
+
+  const text2 = document.createElement('span');
+  text2.textContent = TEXT;
+  text2.classList.add('text');
+  main.appendChild(text2);
+
+  const pictureHome3 = document.createElement('img');
+  pictureHome3.classList.add('picture-home')
+  pictureHome3.src = Restaurant3;
+  main.appendChild(pictureHome3);
+
+  const text3 = document.createElement('span');
+  text3.textContent = TEXT;
+  text3.classList.add('text');
+  main.appendChild(text3);
 }
