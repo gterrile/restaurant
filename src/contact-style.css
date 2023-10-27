@@ -3,6 +3,10 @@
   max-width: 800px;
   height: 60vw;
   max-height: 600px;
-  border: 9px solid rgb(220, 176, 94);
-  border-radius: 120px;
+  /* border: 6px solid rgb(220, 176, 94);
+  border-radius: 20px; */
+}
+
+.contact-text {
+  color: white;
 }
